@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IntelQuiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/util.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/brainTeasers.css">
+    <link rel="stylesheet" href="styles/machineProblem.css">
+
+    <link rel="icon" href="" type="">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/MP_script.js"></script>
+    <script defer src="scripts/BT_script.js"></script>
+    <script defer src="database/brainTeaser.js"></script>
+    <script defer src="database/machineProblem.js"></script>
+
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">IntelQuiz</a>
+            <nav class="navbar">
+                <a href="#home" class="home-navbar active animated-navbar">Home</a>
+                <a href="#" class="brain-teaser-navbar animated-navbar">Brain Teasers</a>
+                <a href="#" class="machine-problem-navbar animated-navbar">Machine Problem</a>
+                <a href="#" class="info-icon"><i class="fa-solid fa-circle-info"></i></a>
+            </nav>
+        </header>
+        <div class="container">
+            <section class="quiz-section brain-teaser">
+                <div class="quiz-box">
+                    <h1 class="quiz-title-header">Brain Teaser Quiz</h1>
+                    <div class="quiz-header">
+                        <span>Technology history, Technological terms, and Programming-related quizzes</span>
+                    </div>
+                    <h2 class="question-text brain-teaser-question">
+
+                    </h2>
+                    <input type="text" class="answer brain-teaser-answer" placeholder="Enter you answer here...">
+                    <span class="correct-answer">
+
+                    </span>
+                    <div class="quiz-footer">
+                        <button class="button back-button brain-teaser-back-btn">Back</button>
+                        <span class="question-total">
+
+                        </span>
+                        <button class="button verify-button active">Verify</button>
+                        <button class="button next-button brain-teaser-next-btn">Next</button>
+                    </div>
+                </div>
+            </section>
+            <section class="quiz-section machine-problem js-machine-problem">
+                <div class="quiz-box-machine-problem">
+                    <h1 class="quiz-title-header">Machine Problem</h1>
+                    <div class="quiz-header">
+                        <span>Fundamental in Programming Languages</span>
+                    </div>
+                    <h2 class="question-text machine-problem-question">
+
+                    </h2>
+<!--                    <input type="text" class="answer answer-machineProb" placeholder="Enter you answer here...">-->
+                    <div class="quiz-footer">
+                        <button class="button back-button-machine-problem">Back</button>
+                        <span class="question-total-machineProb"></span>
+<!--                        <button class="button verify-button-machine-prob active">Verify</button>-->
+                        <button class="button next-button-machine-problem active">Next</button>
+                    </div>
+                </div>
+            </section>
+            <section class="home" id="home">
+                <div class="home-content">
+                    <h1>Online Quiz Website</h1>
+                    <p>The platform offers a technological history and terms, programming-related questions, and simple
+                        machine problems. Unleash your curiosity, challenge your mind, and embark on a journey of knowledge
+                        and entertainment.
+                    </p>
+                    <button class="button js-start-button">
+                        Start Quiz
+                    </button>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <div class="info-message pop-up">
+        <i class="fa-solid fa-xmark close-mark js-close-info-message"></i>
+        <h2 class="quiz-instruction-title">Quiz Instructions</h2>
+        <h3 class="machine-problem-title">Machine Problem</h3>
+        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span class="info">2. Lorem ipsum dolor sit amet.</span>
+        <span class="info">3. Lorem ipsum dolor sit amet, consectetur.</span>
+        <h3 class="brain-teaser-title">Brain Teaser</h3>
+        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="info">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <div class="author-section">
+            <p>Created By <span><a href="https://knu09.github.io/portfolio-website/" target="_blank">Christian</a></span> | © 2023 All rights reserved.</p>
+        </div>
+    </div>
+    <div class="pop-up-message pop-up">
+        <i class="fa-solid fa-xmark close-mark js-close"></i>
+        <h2 class="quiz-instruction-title">Quiz Instructions</h2>
+        <h3 class="machine-problem-title">Machine Problem</h3>
+        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span class="info">2. Lorem ipsum dolor sit amet.</span>
+        <span class="info">3. Lorem ipsum dolor sit amet, consectetur.</span>
+        <h3 class="brain-teaser-title">Brain Teaser</h3>
+        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+        <span class="info">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+        <div class="button-row">
+            <button class="button machine-problem-button js-machine-problem-btn">Machine Problem</button>
+            <a href="#" class="button brain-teaser-btn js-brain-teaser-btn">Brain Teaser</a>
+        </div>
+    </div>
+</body>
+</html>
