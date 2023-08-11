@@ -45,7 +45,7 @@ inputQuestionNum.onkeydown = function(event) {
 
 inputQuestionNum.addEventListener("input", () => {
     if(inputQuestionNum.value.length > 30) {
-        inputQuestionNum.value = inputQuestionNum.value.slice(0, 30);
+        inputQuestionNum.value = inputQuestionNum.value.slice(0, 43);
 
     }
 })

@@ -73,6 +73,7 @@
     font-size: 16px;
     padding: 20px 25px;
     margin-bottom: 25px;
+    resize: none;
 }
 
 .quiz-footer {
