@@ -129,6 +129,23 @@
     display: block;
 }
 
+.question-number {
+    width: 35px;
+    background: transparent;
+    text-align: center;
+    font-family: Poppins, Arial, serif;
+    outline: none;
+    border: 1px solid var(--clr-gray);
+    color: var(--clr-white);
+    border-radius: 5px;
+    padding: 8px 0;
+
+}
+
+.question-number:focus {
+    border: 1px solid var(--clr-sky-blue);
+}
+
 /*.wrong-mark {*/
 /*    color: darkred;*/
 /*    font-size: 20px;*/

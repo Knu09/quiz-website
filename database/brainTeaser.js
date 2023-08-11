@@ -18,7 +18,7 @@ const questions_BT = [
     {
         num: 4,
         question: "What computer term is attributed to John W. Tukey and refers to the process of processing and analyzing large datasets?  ",
-        answer: "",
+        answer: "Exploratory Data Analysis",
     },
     {
         num: 5,
@@ -53,7 +53,7 @@ const questions_BT = [
     {
         num: 11,
         question: "Complete the acronym RICHNEST. ",
-        answer: ""
+        answer: "Research Incubation Hub for Novel Solutions and Collaboration and Explorative Technologies"
     },
     {
         num: 12,
@@ -63,7 +63,7 @@ const questions_BT = [
     {
         num: 13,
         question: "What is the primary function of the CPU? ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 14,
@@ -73,7 +73,7 @@ const questions_BT = [
     {
         num: 15,
         question: "What is the purpose of RAM in a computer? ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 16,
@@ -83,17 +83,17 @@ const questions_BT = [
     {
         num: 17,
         question: "What is a web browser? ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 18,
         question: "What is an operating system? ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 19,
         question: "Name three popular operating systems for personal computers. ",
-        answer: "Microsoft Windows MacOS Linux"
+        answer: "Microsoft Windows and MacOS Linux"
     },
     {
         num: 20,
@@ -103,7 +103,7 @@ const questions_BT = [
     {
         num: 21,
         question: "What is the purpose of HTML in web development?  ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 22,
@@ -113,7 +113,7 @@ const questions_BT = [
     {
         num: 23,
         question: "What is the role of CSS in web development? ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 24,
@@ -123,17 +123,17 @@ const questions_BT = [
     {
         num: 25,
         question: "What is a virus?  ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 26,
         question: "What is a firewall?  ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 27,
         question: "What is the purpose of a computer mouse? ",
-        answer: ""
+        answer: "Personal opinion..."
     },
     {
         num: 28,
