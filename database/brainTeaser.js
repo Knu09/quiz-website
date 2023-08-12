@@ -22,7 +22,7 @@ const questions_BT = [
     {
         num: 5,
         question: "Who is our current dean in our college?",
-        answer: "Elmer Haro"
+        answer: "Elmer Torres Haro"
     },
     {
         num: 6,

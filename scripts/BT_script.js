@@ -1,5 +1,7 @@
 let brainTeaserCount = 0;
 
+console.log(brainTeaserCount)
+
 const BTQuestionText = document.querySelector('.brain-teaser-question');
 const BTNextButton = document.querySelector('.brain-teaser-next-btn')
 const verifyButtonBrainTeaser = document.querySelector('.verify-button');
@@ -14,10 +16,10 @@ function nextQuestionBT() {
         showBrainTeaser(brainTeaserCount);
     }
 
-    verifyButtonBrainTeaser.classList.add('active');
-    BTAnswer.classList.remove('correct')
-    BTNextButton.classList.remove('active');
-    BTAnswer.value = "";
+    // verifyButtonBrainTeaser.classList.add('active');
+    // BTAnswer.classList.remove('correct')
+    // BTNextButton.classList.remove('active');
+    // BTAnswer.value = "";
 }
 
 BTNextButton.onclick = () => {
@@ -29,9 +31,9 @@ BTBackButton.onclick = () => {
         brainTeaserCount--;
         showBrainTeaser(brainTeaserCount);
     }
-    BTAnswer.classList.remove('wrong');
-    BTAnswer.value = "";
-    BTAnswer.classList.remove('correct');
+    // BTAnswer.classList.remove('wrong');
+    // BTAnswer.value = "";
+    // BTAnswer.classList.remove('correct');
 }
 
 inputQuestionNum.onkeydown = function(event) {
@@ -44,7 +46,7 @@ inputQuestionNum.onkeydown = function(event) {
 }
 
 inputQuestionNum.addEventListener("input", () => {
-    if(inputQuestionNum.value.length > 30) {
+    if(inputQuestionNum.value.length > 43) {
         inputQuestionNum.value = inputQuestionNum.value.slice(0, 43);
 
     }
