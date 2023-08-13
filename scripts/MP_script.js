@@ -46,6 +46,6 @@ function showMachineProblem(machineProblemCount) {
     machineProblemText.textContent = `${questions[machineProblemCount].num}. ${questions[machineProblemCount].question}`;
 
     document.querySelector('.question-total-machineProb')
-        .innerHTML = `${machineProblemCount + 1} of 4 Questions`;
+        .innerHTML = `${machineProblemCount + 1} of ${questions.length} Questions`;
 }
 

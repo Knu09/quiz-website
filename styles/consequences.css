@@ -74,3 +74,32 @@
 .js-randomize-okay.active {
     display: block;
 }
+
+.mystery-boxes {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.mystery-boxes.active {
+    display: flex;
+}
+
+.mystery-boxes div {
+    max-width: 100px;
+    max-height: 110px;
+}
+
+.mystery-boxes div {
+    border: 2px solid var(--clr-gray);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mystery-boxes div h2 {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
