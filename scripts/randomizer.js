@@ -50,6 +50,7 @@ randomizerBTN.onclick = () => {
             }
 
             okayBtnMysteryBox.onclick = () => {
+                titleRandomizer.innerText = '';
                 okayBtnMysteryBox.classList.remove('active');
                 randomizerBTN.classList.remove('hide');
                 imageRandomizer.src = 'images/question-mark.png';
