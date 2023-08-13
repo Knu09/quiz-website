@@ -50,6 +50,9 @@ function activeElementsMachineProblem () {
     brainTeaser.classList.remove('active');
     quizBoxMachineProblemAnimate.classList.add('active');
     quizBoxAnimate.classList.remove('active');
+    sectionConsequences.classList.remove('active');
+    navbarConsequences.classList.remove('active');
+    consequencesBox.classList.remove('active');
 
     showMachineProblem(machineProblemCount);
 
@@ -63,6 +66,9 @@ homeNavBar.onclick = () => {
     machineProblemNavBar.classList.remove('active');
     quizBoxMachineProblemAnimate.classList.remove('active');
     quizBoxAnimate.classList.remove('active');
+    sectionConsequences.classList.remove('active');
+    navbarConsequences.classList.remove('active');
+    consequencesBox.classList.remove('active');
 }
 
 navBarBrainTeaser.onclick = activeElements;
@@ -78,6 +84,9 @@ function activeElements() {
     main.classList.remove('active');
     quizBoxAnimate.classList.add('active');
     quizBoxMachineProblemAnimate.classList.remove('active');
+    sectionConsequences.classList.remove('active');
+    navbarConsequences.classList.remove('active');
+    consequencesBox.classList.remove('active');
 
     showBrainTeaser(brainTeaserCount);
 }

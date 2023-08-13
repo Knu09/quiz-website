@@ -1,0 +1,75 @@
+.consequences {
+    position: fixed;
+    top: 100%;
+    bottom: 0;
+    /*left: 0;*/
+    width: 100%;
+    background: #0b0d26;
+    transition: .5s ease-in-out;
+    filter: blur(40px);
+    transition-delay: .5s;
+    z-index: 100;
+    /*background: seagreen;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consequences.active {
+    filter: blur(0);
+    top: 0;
+    bottom: 0;
+}
+
+.randomizer-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.random-box-generator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--clr-gray);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.image-randomizer {
+    margin-bottom: 10px;
+}
+
+.randomize-footer {
+    justify-content: center;
+}
+
+.randomize-button {
+    box-shadow: none;
+}
+
+.randomize-button:hover {
+    background-color: #007fda;
+    border: 2px solid #007fda;
+}
+
+.js-randomize-button.hide {
+    display: none;
+}
+
+.js-randomize-open {
+    display: none;
+}
+
+.js-randomize-open.active {
+    display: block;
+}
+
+.js-randomize-okay {
+    display: none;
+}
+
+.js-randomize-okay.active {
+    display: block;
+}

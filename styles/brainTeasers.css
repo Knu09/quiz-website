@@ -19,7 +19,7 @@
     left:0;
 }
 
-.quiz-section .quiz-box,.quiz-box-machine-problem {
+.quiz-section .quiz-box,.quiz-box-machine-problem,.consequences-box{
     width: 600px;
     position: relative;
     background: transparent;
@@ -33,7 +33,7 @@
     transform: scale(.9);
 }
 
-.quiz-section .quiz-box.active, .quiz-box-machine-problem.active {
+.quiz-section .quiz-box.active, .quiz-box-machine-problem.active,.consequences-box.active{
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);

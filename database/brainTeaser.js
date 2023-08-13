@@ -80,7 +80,7 @@ const questions_BT = [
     {
         num: 14,
         question: "What was the name of the world's first fully functional, programmable computer completed by Konrad Zuse in 1941?",
-        answer: "Konrad Zuse "
+        answer: "Z3"
     },
     {
         num: 15,

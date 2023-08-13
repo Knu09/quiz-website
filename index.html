@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/brainTeasers.css">
     <link rel="stylesheet" href="styles/machineProblem.css">
+    <link rel="stylesheet" href="styles/consequences.css">
 
     <link rel="icon" href="" type="">
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
@@ -25,8 +26,11 @@
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/MP_script.js"></script>
     <script defer src="scripts/BT_script.js"></script>
+    <script defer src="scripts/randomizer.js"></script>
     <script defer src="database/brainTeaser.js"></script>
     <script defer src="database/machineProblem.js"></script>
+    <script defer src="database/consequencesData.js"></script>
+
 
 </head>
 <body>
@@ -37,6 +41,7 @@
                 <a href="#home" class="home-navbar active animated-navbar">Home</a>
                 <a href="#" class="brain-teaser-navbar animated-navbar">Brain Teasers</a>
                 <a href="#" class="machine-problem-navbar animated-navbar">Machine Problem</a>
+                <a href="#" class="consequences-navbar animated-navbar">Consequences</a>
                 <a href="#" class="info-icon"><i class="fa-solid fa-circle-info"></i></a>
             </nav>
         </header>
@@ -84,6 +89,25 @@
                     </div>
                 </div>
             </section>
+            <section class="quiz-section consequences ">
+                <div class="consequences-box ">
+                    <h1 class="quiz-title-header">Consequences</h1>
+                    <div class="quiz-header">
+                        <span>Brain teaser and Machine problem randomize consequences</span>
+                    </div>
+                    <div class="randomizer-box">
+                        <div class="random-box-generator">
+                            <img class="image-randomizer" src="images/question-mark.png">
+                            <h2 class="title-randomizer"></h2>
+                        </div>
+                    </div>
+                    <div class="quiz-footer randomize-footer">
+                        <button class="button randomize-button js-randomize-button">Randomize</button>
+                        <button class="button randomize-button js-randomize-open">Open</button>
+                        <button class="button randomize-button js-randomize-okay">Done</button>
+                    </div>
+                </div>
+            </section>
             <section class="home" id="home">
                 <div class="home-content">
                     <h1>Online Quiz Website</h1>
@@ -103,12 +127,13 @@
         <i class="fa-solid fa-xmark close-mark js-close-info-message"></i>
         <h2 class="quiz-instruction-title">Quiz Instructions</h2>
         <h3 class="machine-problem-title">Machine Problem</h3>
-        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-        <span class="info">2. Lorem ipsum dolor sit amet.</span>
-        <span class="info">3. Lorem ipsum dolor sit amet, consectetur.</span>
+        <span class="info">1. Taking too long in the challenge will be stopped.</span>
+        <span class="info">2. Browsing the web for the answers will nullify your challenge. </span>
+        <span class="info">3. Once finished, it will be verified by the officers. </span>
+        <span class="info">4. Failure to complete the challenge will lead to a random consequence. </span>
         <h3 class="brain-teaser-title">Brain Teaser</h3>
-        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
-        <span class="info">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <span class="info">1. Searching the Web is not allowed.</span>
+        <span class="info">2. Failure to answer the question will result to a random consequence.</span>
         <div class="author-section">
             <p>Created By <span><a href="https://knu09.github.io/portfolio-website/" target="_blank">Christian</a></span> | © 2023 All rights reserved.</p>
         </div>
@@ -117,13 +142,13 @@
         <i class="fa-solid fa-xmark close-mark js-close"></i>
         <h2 class="quiz-instruction-title">Quiz Instructions</h2>
         <h3 class="machine-problem-title">Machine Problem</h3>
-        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-        <span class="info">2. Lorem ipsum dolor sit amet.</span>
-        <span class="info">3. Lorem ipsum dolor sit amet, consectetur.</span>
+        <span class="info">1. Taking too long in the challenge will be stopped.</span>
+        <span class="info">2. Browsing the web for the answers will nullify your challenge. </span>
+        <span class="info">3. Once finished, it will be verified by the officers. </span>
+        <span class="info">4. Failure to complete the challenge will lead to a random consequence. </span>
         <h3 class="brain-teaser-title">Brain Teaser</h3>
-        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
-        <span class="info">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-
+        <span class="info">1. Searching the Web is not allowed.</span>
+        <span class="info">2. Failure to answer the question will result to a random consequence.</span>
         <div class="button-row">
             <button class="button machine-problem-button js-machine-problem-btn">Machine Problem</button>
             <a href="#" class="button brain-teaser-btn js-brain-teaser-btn">Brain Teaser</a>
