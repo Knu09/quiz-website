@@ -16,6 +16,8 @@ navbarConsequences.onclick = () => {
 
     brainTeaser.classList.remove('active');
     navBarBrainTeaser.classList.remove('active');
+
+    imageRandomizer.classList.add('active');
 }
 
 
@@ -26,7 +28,7 @@ const imageRandomizer = document.querySelector('.image-randomizer');
 const titleRandomizer = document.querySelector('.title-randomizer');
 
 randomizerBTN.onclick = () => {
-
+    imageRandomizer.classList.add('active');
     randomValue = Math.floor(Math.random() * 100);
 
     if(randomValue < 60) {

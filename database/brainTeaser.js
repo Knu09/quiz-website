@@ -175,9 +175,10 @@ const questions_BT = [
     {
         num: 33,
         question: "What is the significance of the \"Doom\" video game in the history of computer graphics?",
-        answer: "\"Doom,\" released in 1993, is a groundbreaking video game that significantly advanced computer graphics and gaming. " +
-            "It pioneered the first-person shooter genre, introduced 3D rendering techniques and real-time texture mapping, and popularized " +
-            "network multiplayer and user-generated content."
+        answer: "First-person perspective, 3D Rendering"
+            // "\"Doom,\" released in 1993, is a groundbreaking video game that significantly advanced computer graphics and gaming. " +
+            // "It pioneered the first-person shooter genre, introduced 3D rendering techniques and real-time texture mapping, and popularized " +
+            // "network multiplayer and user-generated content."
     },
     {
         num: 34,
@@ -224,8 +225,9 @@ const questions_BT = [
     {
         num: 42,
         question: "What is the origin of the \"@\" symbol in email addresses?",
-        answer: "The origin of the \"@\" symbol in email addresses dates back to the 1970s. Ray Tomlinson, the inventor " +
-            "of email, chose the \"@\" symbol to separate the user's name from the host computer's name in email addresses. "
+        answer: "To separate names",
+            // "The origin of the \"@\" symbol in email addresses dates back to the 1970s. Ray Tomlinson, the inventor " +
+            // "of email, chose the \"@\" symbol to separate the user's name from the host computer's name in email addresses. "
     },
     {
         num: 43,

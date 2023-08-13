@@ -16,5 +16,15 @@ let questions = [
         num: 4,
         question: "Write a program that checks a string if it is a palindrome and if it is an anagram. "
     },
+    {
+        num: 5,
+        question: 'Create a program that randomly generates a password. The password must include at least one uppercase ' +
+            'letter, one number, one lowercase letter. Length is user-input.'
+    },
+    {
+       num: 6,
+       question: '\n' +
+           'Create a program that reverses the words in a string. For example, the string "Hello world" will be converted to "world Hello".'
+    }
 
 ]
