@@ -90,9 +90,7 @@
 .mystery-boxes div {
     max-width: 100px;
     max-height: 110px;
-}
 
-.mystery-boxes div {
     border: 2px solid var(--clr-gray);
     padding: 20px;
     border-radius: 10px;

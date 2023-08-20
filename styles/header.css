@@ -54,11 +54,11 @@
     transform: scaleX(1);
 }
 
-nav a.active {
+nav ul li.active {
     color: var(--clr-sky-blue);
 }
 
-nav a.active::after {
+nav ul li.active::after {
     content: '';
     width: 100%;
     height: 3px;
@@ -69,9 +69,14 @@ nav a.active::after {
     transform: scaleX(1);
 }
 
-.navbar {
+.navbar ul{
     display: flex;
     align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    cursor: pointer;
 }
 
 .info-icon {
@@ -84,5 +89,67 @@ nav a.active::after {
 
 .info-icon:hover {
     color: var(--clr-sky-blue);
+}
+
+.bar {
+    display: none;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--clr-white);
+}
+
+.menu-bar {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .bar {
+        display: block;
+    }
+
+    .menu-bar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-bar.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-bar.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar ul {
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        opacity: 0;
+        gap: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: rgba(1, 146, 253, .4);
+        box-shadow: 0 8px 32px 0 var(--clr-dark-sky-blue);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        filter: blur(10px);
+
+        width: 250px;
+        height: 300px;
+        transition: 1s;
+    }
+
+    .navbar.active ul{
+        opacity: 1;
+        right: 5%;
+        filter: blur(0);
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
 }
 

@@ -14,6 +14,8 @@ const quizBoxMachineProblemAnimate = document.querySelector('.quiz-box-machine-p
 const infoMessage = document.querySelector('.info-message');
 const infoIcon = document.querySelector('.info-icon');
 const closeInfoMessage = document.querySelector('.js-close-info-message');
+const menuBar = document.querySelector('.menu-bar');
+const navBar = document.querySelector('.navbar');
 
 startBtn.onclick = () => {
     popupInfo.classList.add('active');
@@ -35,6 +37,11 @@ closeInfoMessage.onclick = () => {
     main.classList.remove('active');
 }
 
+menuBar.onclick = () => {
+    navBar.classList.toggle('active');
+    menuBar.classList.toggle('active')
+}
+
 
 machineProblemNavBar.onclick = activeElementsMachineProblem;
 machineProblemBtn.onclick = activeElementsMachineProblem;
@@ -53,6 +60,8 @@ function activeElementsMachineProblem () {
     sectionConsequences.classList.remove('active');
     navbarConsequences.classList.remove('active');
     consequencesBox.classList.remove('active');
+    navBar.classList.remove('active');
+    menuBar.classList.remove('active');
 
     showMachineProblem(machineProblemCount);
 
@@ -69,6 +78,8 @@ homeNavBar.onclick = () => {
     sectionConsequences.classList.remove('active');
     navbarConsequences.classList.remove('active');
     consequencesBox.classList.remove('active');
+    navBar.classList.remove('active');
+    menuBar.classList.remove('active');
 }
 
 navBarBrainTeaser.onclick = activeElements;
@@ -87,6 +98,8 @@ function activeElements() {
     sectionConsequences.classList.remove('active');
     navbarConsequences.classList.remove('active');
     consequencesBox.classList.remove('active');
+    navBar.classList.remove('active');
+    menuBar.classList.remove('active');
 
     showBrainTeaser(brainTeaserCount);
 }

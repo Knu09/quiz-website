@@ -29,6 +29,9 @@ navbarConsequences.onclick = () => {
     navBarBrainTeaser.classList.remove('active');
 
     imageRandomizer.classList.add('active');
+
+    navBar.classList.remove('active');
+    menuBar.classList.remove('active');
 }
 
 

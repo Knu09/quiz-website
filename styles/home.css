@@ -14,13 +14,13 @@
 .container {
     display: flex;
     height: 100vh;
-    width: 200%;
+    width: 100%;
 }
 
 .home {
     position: relative;
-    left: -50%;
-    right: -50%;
+    left: 0;
+    right: 0;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -161,7 +161,7 @@
 }
 
 .brain-teaser-btn:hover {
-    background: var(--clr-dark-sky-blue);
+    background: var(--clr-sky-blue);
 }
 
 .close-mark {
@@ -175,4 +175,46 @@
 
 .close-mark:hover {
     color: var(--clr-sky-blue);
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        max-width: 500px;
+    }
+
+    .home-content h1 {
+     font-size: 35px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .info-message, .pop-up-message {
+        width: 400px;
+    }
+
+    .quiz-instruction-title {
+        font-size: 30px;
+    }
+
+    .pop-up .machine-problem-title,.brain-teaser-title {
+        font-size: 16px;
+    }
+
+    .button-row button {
+        font-size: 14px;
+    }
+
+    .container section:nth-child(n):not(:nth-child(n + 4)) {
+        padding: 0 5%;
+    }
+
+
+    .mystery-boxes div {
+
+        width: 80px;
+        height: 90px;
+    }
 }
