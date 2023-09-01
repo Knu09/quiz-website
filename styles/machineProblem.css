@@ -21,10 +21,10 @@
     left:0;
 }
 
-.quiz-box-machine-problem div button {
+.quiz-footer button {
     box-shadow: none;
     border-radius: 8px;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 .quiz-box-machine-problem div button:first-child:hover {
@@ -52,6 +52,7 @@
     opacity: 0;
     pointer-events: none;
 }
+
 
 /*.next-button-machine-problem {*/
 /*    display: none;*/

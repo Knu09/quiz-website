@@ -86,12 +86,6 @@
     padding-top: 20px;
 }
 
-.quiz-box div button {
-    box-shadow: none;
-    border-radius: 8px;
-    padding: 10px 30px;
-}
-
 .back-button:hover {
     background: var(--clr-dark-sky-blue);
     border-color: var(--clr-dark-sky-blue);
@@ -147,6 +141,10 @@
 
 .question-number:focus {
     border: 1px solid var(--clr-sky-blue);
+}
+
+@media (max-width: 425px) {
+    
 }
 
 /*.wrong-mark {*/
